@@ -32,7 +32,10 @@ class Application
   end
   
   def cart_search
-    if @@cart.include?(items)
+    @@items.each do |item|
+    if @@cart.include?(item)
+      return item 
+    end
       
   
 end
