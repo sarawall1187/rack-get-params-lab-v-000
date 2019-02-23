@@ -52,6 +52,7 @@ class Application
         @@cart << item 
       else 
         return "We don't have that item"
+      end
     end 
   end
   
