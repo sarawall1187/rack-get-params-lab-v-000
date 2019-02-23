@@ -17,7 +17,7 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
      binding.pry
-      cart_search
+      resp.write cart_search
      
     else
       resp.write "Path Not Found"
