@@ -34,7 +34,7 @@ class Application
   def cart_search
     @@items.each do |item|
     if @@cart.include?(item)
-      return item 
+      return @@cart
     else 
       return "Your cart is empty."
     end
