@@ -51,6 +51,8 @@ class Application
       if @@cart.include?(item)
         @@cart << item 
       end
+    end 
+  end
   
   
   
