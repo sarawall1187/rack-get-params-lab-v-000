@@ -36,6 +36,7 @@ class Application
     if @@cart.include?(item)
       return item 
     end
+  end
       
   
 end
