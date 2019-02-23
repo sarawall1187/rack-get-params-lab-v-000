@@ -20,7 +20,7 @@ class Application
       resp.write cart_search
       elsif req.path.match(/add/)
        added_item = req.env["QUERY_STRING"].split("=").last
-       resp.write add_item
+       resp.write add_item(added_item)
     else
       resp.write "Path Not Found"
     end
