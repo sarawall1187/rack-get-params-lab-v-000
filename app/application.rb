@@ -51,7 +51,7 @@ class Application
       if @@items.include?(req.env["QUERY_STRING"].split("=").last)
         @@cart << item 
       else 
-        
+        return "We don't have that item"
     end 
   end
   
