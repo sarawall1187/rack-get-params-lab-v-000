@@ -48,9 +48,7 @@ class Application
   
   def add_item 
     @@items.each do |item|
-      if @@cart.include?(item)
         @@cart << item 
-      end
     end 
   end
   
