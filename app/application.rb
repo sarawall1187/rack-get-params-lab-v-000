@@ -16,8 +16,9 @@ class Application
       search_term = req.params["q"]
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
+     binding.pry
       cart_search
-      binding.pry
+     
     else
       resp.write "Path Not Found"
     end
