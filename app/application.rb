@@ -18,6 +18,8 @@ class Application
     elsif req.path.match(/cart/)
     # binding.pry
       resp.write cart_search
+      elsif req.path.match(/add/)
+      resp.write 
     else
       resp.write "Path Not Found"
     end
