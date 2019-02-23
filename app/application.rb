@@ -48,7 +48,10 @@ class Application
   
   def add_item 
     @@items.each do |item|
+      if @@items.include?(req.env["QUERY_STRING"].split("=").last)
         @@cart << item 
+      else 
+        
     end 
   end
   
