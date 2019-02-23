@@ -35,6 +35,8 @@ class Application
     @@items.each do |item|
     if @@cart.include?(item)
       return item 
+    else 
+      return "Your cart is empty."
     end
   end
   end    
