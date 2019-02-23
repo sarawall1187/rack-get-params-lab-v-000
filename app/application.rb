@@ -50,6 +50,7 @@ class Application
     @@items.each do |item|
       if @@items.include?(req.env["QUERY_STRING"].split("=").last)
         @@cart << item 
+        return "added #{item}"
       else 
         return "We don't have that item"
       end
