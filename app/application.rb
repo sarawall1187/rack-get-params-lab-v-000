@@ -36,7 +36,7 @@ class Application
   def cart_search
     @@items.each do |item|
     if @@cart.include?(item)
-      return @@cart.join(""\n")
+      return @@cart.join("\n")
     else 
       return "Your cart is empty."
     end
