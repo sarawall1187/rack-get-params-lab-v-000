@@ -20,7 +20,7 @@ class Application
       resp.write cart_search
       elsif req.path.match(/add/)
        binding.pry
-      resp.write 
+      # resp.write 
     else
       resp.write "Path Not Found"
     end
