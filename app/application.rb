@@ -19,7 +19,7 @@ class Application
    
       resp.write cart_search
       elsif req.path.match(/add/)
-       
+       added_item = req.env["QUERY_STRING"].split("=").last
        resp.write add_item
     else
       resp.write "Path Not Found"
@@ -48,7 +48,7 @@ class Application
   
   def add_item 
     @@items.each do |item|
-      if @@items.include?(req.env["QUERY_STRING"].split("=").last)
+      if @@items.include?
         @@cart << item 
         return "added #{item}"
       else 
