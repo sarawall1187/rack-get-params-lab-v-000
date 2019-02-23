@@ -46,9 +46,9 @@ class Application
    end
   end  
   
-  def add_item 
+  def add_item(added_item) 
     @@items.each do |item|
-      if @@items.include?
+      if @@items.include?(added_item)
         @@cart << item 
         return "added #{item}"
       else 
